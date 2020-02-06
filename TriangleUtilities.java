@@ -1,21 +1,39 @@
  
 
 public class TriangleUtilities {
-
     public static String getRow(int numberOfStars) {
-        return null;
+                String myConcat = "";
+
+        for(int i = 1; i <= numberOfStars; i++){
+            myConcat += "*";
+        }
+        return myConcat;
     }
     
     public static String getTriangle(int numberOfRows) {
-        return null;
+                 String myConcat = "";
+
+        for(int i = 1; i <= numberOfRows; i++){
+            
+            myConcat += getRow(i) + "\n";
+        }
+        return myConcat;
     }
 
 
     public static String getSmallTriangle() {
-        return null;
+        String myConcat = "";
+        
+        myConcat += getTriangle(4);
+    
+        return myConcat;
     }
 
     public static String getLargeTriangle() {
-        return null;
+         String myConcat = "";
+        
+        myConcat += getTriangle(9);
+    
+        return myConcat;
     }
 }
